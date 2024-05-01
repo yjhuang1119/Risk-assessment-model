@@ -1,6 +1,6 @@
 # Risk Assessment Model
 
-Welcome to the Risk Assessment Model repository! This repository contains code for building and evaluating a risk assessment model using XGBoost. The model is designed to take input data, train an XGBoost model, and provide evaluation metrics such as performance index and feature importance.
+This repository contains code for building and evaluating a risk assessment model using XGBoost. The model is designed to take input data, train an XGBoost model, and provide evaluation metrics such as performance index and feature importance.
 
 ## Input Data Format
 Users can input their datasets in CSV format. The dataset should contain predictor variables and a target variable, which should be binary (0 or 1) for binary classification tasks.
@@ -22,6 +22,13 @@ The default values for these parameters are as follows:
 - `scale_pos_weight`: 1
 - `eta`: 0.3
 
+## Output Results
+The model produces the following outputs:
+- `evaluation_results.csv`: Includes metrics such as AUC, Accuracy, Sensitivity, Specificity, and F1-score.
+- `confusion_matrix.png`: The plot provides a visual representation of model predictions versus actual values.
+- `feature_importance.csv`: Importance scores for predictor variables.
+
+  
 ## Usage
 
 To use this risk assessment model, follow these steps:
@@ -43,7 +50,6 @@ Alternatively, download the source files from the [GitHub website](https://githu
 
 4. **Running an example directly:**
    Optionally, modify the parameters in `main.py`:
-   - `y_col_name`: Name of the target column (optional).
    - `model_params`: Dictionary containing model parameters (optional).
    
    ```bash
@@ -56,24 +62,14 @@ Alternatively, download the source files from the [GitHub website](https://githu
    - `valid_data`: Path to your validation dataset.
    - `test_data`: Path to your test dataset.
    
-   Optionally, modify the parameters in `main.py`:
-   - `y_col_name`: Name of the target column (optional).
+   Modify the parameters in `main.py`:
+   - `y_col_name`: Name of the target column.
    - `model_params`: Dictionary containing model parameters (optional).
    
    ```bash
    python main.py
    ```
 
-6. View the output files:
-   - `feature_importance.csv`: Importance scores for predictor variables.
-   - `evaluation_results.csv`: Model performance metrics.
-   - `confusion_matrix.png`: Plot visualizing model predictions versus actual values.
-
-## Output Results
-The model produces the following outputs:
-- `evaluation_results.csv`: Includes metrics such as AUC, Accuracy, Sensitivity, Specificity, and F1-score.
-- `confusion_matrix.png`: The plot provides a visual representation of model predictions versus actual values.
-- `feature_importance.csv`: Importance scores for predictor variables.
 
 ## File Summary
 - `model_train.py`: Contains functions for training the XGBoost model.

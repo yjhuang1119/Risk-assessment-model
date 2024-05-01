@@ -2,25 +2,30 @@
 
 This repository contains code for building and evaluating a risk assessment model using XGBoost. The model is designed to take input data, train an XGBoost model, and provide evaluation metrics such as performance index and feature importance.
 
+
 ## Input Data Format
-Users can input their datasets in CSV format. The dataset should contain predictor variables and a target variable, which should be binary (0 or 1) for binary classification tasks.
+Users can utilize any data readable into Python and convert it into a pandas DataFrame. You can refer to the example in `usage_example.py` for guidance. 
+The dataset should contain predictor variables and a target variable, which should be binary (0 or 1) for binary classification tasks.
+
 
 ## Model Parameters
 The model accepts the following parameters:
-- `gamma`: Gamma parameter for regularization.
-- `max_depth`: Maximum depth of a tree.
-- `subsample`: Subsample ratio of the training instance.
-- `min_child_weight`: Minimum sum of instance weight (hessian) needed in a child.
-- `scale_pos_weight`: Control the balance of positive and negative weights.
-- `eta`: Learning rate.
+- `gamma`: The minimum loss reduction required for splitting. (range: [0,∞])
+- `max_depth`: The maximum depth of a tree. (range: [0,1])
+- `subsample`: The subsample ratio of the training instance. (range: [0,1])
+- `min_child_weight`: The minimum sum of instance weight required in a child. (range: [0,∞])
+- `scale_pos_weight`: The control of the balance between positive and negative weights.
+                      A typical value to consider: sum(negative instances) / sum(positive instances)
+- `eta`: Learning rate. (range: [0,1])
 
 The default values for these parameters are as follows:
 - `gamma`: 0
 - `max_depth`: 6
-- `subsample`: 0.7
+- `subsample`: 1
 - `min_child_weight`: 1
 - `scale_pos_weight`: 1
 - `eta`: 0.3
+
 
 ## Output Results
 The model produces the following outputs:
@@ -28,7 +33,7 @@ The model produces the following outputs:
 - `confusion_matrix.png`: The plot provides a visual representation of model predictions versus actual values.
 - `feature_importance.csv`: Importance scores for predictor variables.
 
-  
+
 ## Usage
 
 To use this risk assessment model, follow these steps:

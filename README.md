@@ -39,12 +39,10 @@ The model produces the following outputs:
 To use this risk assessment model, follow these steps:
 
 1. Clone this repository using the following git command:
-
-```
-git clone https://github.com/yjhuang1119/Risk-assessment-model.git
-```
-
-Alternatively, download the source files from the [GitHub website](https://github.com/yjhuang1119/Risk-assessment-model).
+   ```
+   git clone https://github.com/yjhuang1119/Risk-assessment-model.git
+   ```
+&ensp;Alternatively, download the source files from the [GitHub website](https://github.com/yjhuang1119/Risk-assessment-model).
 
 2. Ensure you have Python installed on your machine.
 

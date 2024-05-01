@@ -4,7 +4,7 @@ This repository contains code for building and evaluating a risk assessment mode
 
 
 ## Input Data Format
-Users can utilize any data readable into Python and convert it into a pandas DataFrame. You can refer to the example in `usage_example.py` for guidance. 
+Users can use any data readable into Python and convert it into a pandas DataFrame. You can refer to the example in `usage_example.py` for guidance.
 The dataset should contain predictor variables and a target variable, which should be binary (0 or 1) for binary classification tasks.
 
 
@@ -15,7 +15,7 @@ The model accepts the following parameters:
 - `subsample`: The subsample ratio of the training instance. (range: [0,1])
 - `min_child_weight`: The minimum sum of instance weight required in a child. (range: [0,∞])
 - `scale_pos_weight`: The control of the balance between positive and negative weights.
-                      A typical value to consider: sum(negative instances) / sum(positive instances)
+                      <br>A typical value to consider: sum(negative instances) / sum(positive instances)
 - `eta`: Learning rate. (range: [0,1])
 
 The default values for these parameters are as follows:

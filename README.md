@@ -55,7 +55,7 @@ To use this risk assessment model, follow these steps:
    Optionally, modify the parameters in `main.py`:
    - `model_params`: Dictionary containing model parameters (optional).
    
-   ```bash
+   ```
    python main.py
    ```
 
@@ -69,7 +69,7 @@ To use this risk assessment model, follow these steps:
    - `y_col_name`: Name of the target column.
    - `model_params`: Dictionary containing model parameters (optional).
    
-   ```bash
+   ```
    python main.py
    ```
 

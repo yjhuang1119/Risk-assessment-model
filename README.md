@@ -15,7 +15,7 @@ The model accepts the following parameters:
 - `subsample`: The subsample ratio of the training instance. (range: [0, 1])
 - `min_child_weight`: The minimum sum of instance weight required in a child. (range: [0, ∞])
 - `scale_pos_weight`: The control of the balance between positive and negative weights.
-A typical value to consider: sum(negative instances) / sum(positive instances)
+<br>A typical value to consider: sum(negative instances) / sum(positive instances)
 - `eta`: Learning rate. (range: [0, 1])
 
 The default values for these parameters are shown as follows:
@@ -40,11 +40,11 @@ To use this repository of Risk Assessment Model, please follow the steps below:
 
 1. Clone this repository using the following git command:
 
-```
-git clone https://github.com/yjhuang1119/Risk-assessment-model.git
-```
+   ```
+   git clone https://github.com/yjhuang1119/Risk-assessment-model.git
+   ```
 
-Alternatively, download the source files from the [GitHub website] (https://github.com/yjhuang1119/Risk-assessment-model).
+Alternatively, download the source files from the [GitHub website](https://github.com/yjhuang1119/Risk-assessment-model).
 
 2. Ensure you have Python installed on your machine.
 

@@ -49,6 +49,7 @@ Alternatively, download the source files from the [GitHub website](https://githu
 2. Ensure you have Python installed on your machine.
 
 3. Install the required Python libraries by running:
+   
    ```
    pip install -r requirements.txt
    ```
@@ -57,11 +58,11 @@ Alternatively, download the source files from the [GitHub website](https://githu
    Optionally, modify the parameters in `main.py`:
    - `model_params`: Dictionary containing model parameters (optional).
    
-   ```bash
+   ```
    python main.py
    ```
 
-5. **Using your data:**
+6. **Using your data:**
    Prepare your datasets in CSV format, and modify the following variables in `main.py`:
    - `train_data`: Path to your training dataset.
    - `valid_data`: Path to your validation dataset.
@@ -71,7 +72,7 @@ Alternatively, download the source files from the [GitHub website](https://githu
    - `y_col_name`: Name of the target column.
    - `model_params`: Dictionary containing model parameters (optional).
    
-   ```bash
+   ```
    python main.py
    ```
 
